@@ -1,0 +1,28 @@
+.section-event {
+  .card {
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    .h-tertiary {
+      margin-bottom: -2rem;
+    }
+    .lead {
+      width: 80%;
+      text-align: justify;
+    }
+    .dots {
+      ul {
+        display: flex;
+        font-size: 3.5rem;
+        li {
+          margin-left: 2rem;
+          color: #ddd;
+        }
+        li:first-child {
+          margin-left: 3rem;
+          color: orange;
+        }
+      }
+    }
+  }
+}

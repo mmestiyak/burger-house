@@ -1,0 +1,115 @@
+.header {
+  padding: 8rem 0;
+  background: url(../images/bg.png);
+  &__content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100%;
+    &-left {
+      margin-top: 8rem;
+      p {
+        font-size: 2rem;
+        max-width: 35rem;
+        font-family: Bebas Neue;
+        text-align: center;
+        border: 2px dashed currentColor;
+      }
+      .title,
+      .sub-title {
+        font-family: Alfa Slab One;
+        text-transform: uppercase;
+        font-size: 9rem;
+        letter-spacing: 0.1em;
+        text-shadow: 3px 4px 0px #fff;
+      }
+
+      .sub-title {
+        font-size: 6.5rem;
+        margin-top: -4rem;
+      }
+    }
+    &-right {
+      position: relative;
+      img {
+        width: 80%;
+      }
+
+      h2 {
+        position: absolute;
+        bottom: -3%;
+        left: 6%;
+        background: #bf2222;
+        display: flex;
+        border-radius: 50%;
+        color: #fff;
+        width: 15rem;
+        height: 15rem;
+        align-items: center;
+        justify-content: center;
+        & > span {
+          font-size: 4rem;
+          border: 1px dashed #fff;
+          padding: 2rem;
+          border-radius: 50%;
+          width: 90%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: Bebas Neue;
+          span:first-child::after {
+            content: ".49";
+            font-size: 2.5rem;
+          }
+          span:last-child {
+            font-size: 3rem;
+            letter-spacing: 0.2em;
+            display: inline-block;
+            margin-top: -1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+}
+
+// Styling the Navbar
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .lead {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+
+    a {
+      font-family: Bebas Neue;
+      margin-left: 3rem;
+      font-size: 2.2rem;
+      letter-spacing: 0.1em;
+    }
+  }
+}

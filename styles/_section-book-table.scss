@@ -1,0 +1,66 @@
+.section-book-table {
+  position: relative;
+  &::before {
+    content: " ";
+    background: url(../images/burger-simple.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+  }
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+ 
+    &::before {
+      content: ' ';
+      background: url(../images/burger-simple.png);
+      background-position: center;
+      background-size: cover;
+      width: 25rem;
+      height: 25rem;
+      position: absolute;
+      top: -28%;
+      left: -7%;
+      transform: rotateY(-180deg);
+    }
+    &::after {
+      content: ' ';
+      background: url(../images/burger-platte.png);
+      background-position: center;
+      background-size: cover;
+      width: 35rem;
+      height: 35rem;
+      position: absolute;
+      right: -18%;
+    transform: rotate(61deg);
+    }
+  }
+  .table-book-form {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 13%;
+      width: 6%;
+    }
+  }
+  form {
+    margin: 3rem 0;
+    min-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    input[type="email"],
+    input[type="text"] {
+      padding: 0.5em;
+      font-size: 2rem;
+      border: 1px solid #333;
+      outline: none;
+      border-radius: 0.1em;
+      font-family: Bebas Neue;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@media (max-width: 1200px) and (min-width: 960px) {
+  html {
+    font-size: 8px;
+  }
+  .header__content-right img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 959px){
+  html {
+    font-size: 7px;
+  }
+  .navbar {
+    flex-direction: column;
+    .lead {
+      display: none;
+    }
+  }
+  .header__content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    p {
+      max-width: 100%;
+      border: none;
+    }
+    &-right {
+      img {
+        width: 50%;
+      }
+      h2 {
+        bottom: -2%;
+        left: 27%;
+      }
+    }
+
+
+  }
+
+  .menus .container {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .section-event .card {
+    img {
+      order: -1;
+    }
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+.section-book-table > .container{
+  &::after, &::before {
+    display: none;
+  }
+}
+
+.section-book-table .table-book-form img {
+  display: none;
+}
+}
+
+
+@media (max-width:599px){
+  html {
+    font-size: 6px;
+  }
+  .header__content-right h2{
+    display: none;
+  }
+  .section-post-category .container{
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  .section-book-table form {
+    grid-template-columns: 1fr;
+    min-width: 45rem;
+  }
+
+}

@@ -1,0 +1,34 @@
+
+.section-post-category .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+  color:#fff;
+
+  .h-secondary {
+    margin-top: -2rem;
+  }
+  .card {
+    cursor: pointer;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position:  center;
+  }
+
+}
+
+
+
+.card1 {
+  grid-row: 1 / -1;
+  background: url(../images/Burger-Image1.png);
+}
+
+.card2 {
+  background: url(../images/burger-image-2.png);
+}
+
+.card3 {
+  background: url(../images/burger-image-3.png);
+}
